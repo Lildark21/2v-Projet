@@ -24,7 +24,8 @@ footer {
 .footer-service h3,
 .footer-conctacte h3,
 .footer-heure h3 {
-    color: #333;
+    color: #000000;
+    font-size: 15px;
 }
 
 .liste-services {
@@ -33,7 +34,7 @@ footer {
 }
 
 .liste-services a {
-    color: #666;
+    color: #000000;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;

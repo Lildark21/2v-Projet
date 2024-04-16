@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <a href="./index.php"><img src="logo.png"  class="logo" width="84" height="89.5"></a>
+        <a href="./index.php"><img src="logo-removebg-preview.png"  class="logo" width="84" height="89.5"></a>
 
         <nav class="navbar">
             

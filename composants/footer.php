@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css\footer.css">
     <div class="contenu-footer">
         <div class="blo footer-service">
-            <h3>Nos services</h3>
+            <h1>Nos services</h1>
             <ul class="liste-services">
                 <a >Notre entreprise</a>
                 <a >Trouver votre spécialiste</a>
@@ -17,6 +17,7 @@
 
         <div class="blo footer-conctacte">
             <h2>Nos Conctacte</h2>
+            
             <p>Téléphone: +33 1 23 45 67 89</p>
             <p>E-mail: contact@psylib.fr</p>
             <p>123 Rue des Thérapeutes, 31000 Toulouse, France</p>
@@ -25,7 +26,6 @@
 
         <div class="bloc footer-heure">
             <h3>Nos horaires</h3>
-            
                 <p>✔️ Lundi 9h - 19h</p>
                 <p>✔️ Mardi 9h - 19h</p>
                 <p>✔️ Mercredi 10h - 18h </p>
@@ -33,9 +33,7 @@
                 <p>✔️ Vendredi 9h -19h </p>
                 <p>❌ Samedi fermer</p>
                 <p>❌ Dimanche fermer</p>
-            
         </div>
-
             </ul>
         </div>
 </footer>
