@@ -8,13 +8,14 @@
  <body>
 
  <?php
-require_once 'affichage.php';
 
+include 'composants/header.php';
 ?>
 
 <?php
-echo pageHeader("Psylib");
+
 ?>
+<link rel="stylesheet" href="css\inscritption.css">
 
  <form method="POST" action ="traitementpsy.php">
     <label for="nom">Nom</label>
@@ -38,8 +39,10 @@ echo pageHeader("Psylib");
     <label for="num_de_secu">Numéro de sécurité social</label>
     <input type="num_de_secu" id="num_de_secu" name="security_number" placeholder="Entrez votre numéro de sécurité social" required>
     <br>
-    <label for="genre">Genre</label>
-    <input type="text" id="genre" name="gender" placeholder="Entrez votre genre" required>
+    <select name="gender">
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+    </select>
     <br>
     <label for="address">Entrez votre adresse</label>
     <input type="text" id="address" name="address" placeholder="Entrez votre adresse." required>
@@ -54,10 +57,10 @@ echo pageHeader("Psylib");
     <input type="text" id="diploma" name="diploma" placeholder="Entrez votre diplome" required>
     <br>
     <label for="price">prix</label>
-    <input type="text" id="price" name="price" placeholder="Entrez votre prix" required>
+    <input type="text" id="price" name="price" placeholder="Entrez le prix de vos consultation" required>
     <br>
     <label for="consultation_type">Consultation</label>
-    <input type="text" id="consultation_type" name="consultation_type" placeholder="Entrez vos consultation" required>
+    <input type="text" id="consultation_type" name="consultation_type" placeholder="Entrez vos type de consultation" required>
     <br>
     <input type="submit" value="S'inscrire" name="ok">
 </form>
@@ -67,5 +70,5 @@ echo pageHeader("Psylib");
 
 
     
- <?php echo pageFooter()?>
+ <?php include './composants/footer.php'; ?>
 

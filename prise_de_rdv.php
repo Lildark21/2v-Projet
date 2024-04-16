@@ -46,10 +46,15 @@ if (isset($_POST["date"])and isset($_POST["Indication"])) {
 ?>
 <?php
 
-$stmt = db()->prepare("DELETE FROM appointment WHERE Appointment_Date < CURDATE()");
-$stmt->execute();
+$stmb = db()->prepare("SELECT Appointment_Date FROM appointment WHERE Appointment_Date < CURDATE()");
+$stmb->execute();
+$result = $stmb->fetch(PDO::FETCH_ASSOC);
+if(!empty($result["Appointment_Date"]) and !isset($result["Appointment_Date"])){
+  $stmt = db()->prepare("DELETE FROM appointment WHERE Appointment_Date < CURDATE()");
+  $stmt->execute();
+  echo "Les rendez-vous passés ont été supprimés.";
+}
 
-echo "Les rendez-vous passés ont été supprimés.";
 ?>
 
 <?php include './composants/footer.php';?>
