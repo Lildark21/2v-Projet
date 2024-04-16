@@ -5,8 +5,8 @@ $bdd = new PDO('mysql:host=127.0.0.1;dbname=psylib;charset=utf8','root',
 
 if(isset($_POST['ok'])){
     
-    $Last_name = $_POST['Last_name'];
-    $First_name = $_POST['First_name']; 
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom']; 
     $age = $_POST['age'];
     $numero = $_POST['numero'];
     $email = $_POST['email'];
@@ -15,12 +15,12 @@ if(isset($_POST['ok'])){
     $gender = $_POST['gender'];
 
 
-    $requete = $bdd->prepare("INSERT INTO users VALUES (0, :Last_name,:First_name, :age, :numero, :email, :mdp, :num_secu, :gender)");  
+    $requete = $bdd->prepare("INSERT INTO users VALUES (0, :nom, :prenom, :age, :numero, :email, :mdp, :num_secu, :gender)");  
     $requete->execute(
         array(
             
-            'Last_name' => $First_name,
-            'First_name' => $Last_name,
+            'nom' => $nom,
+            'prenom' => $prenom,
             'age' => $age,
             'numero' => $numero,
             'email' => $email,
