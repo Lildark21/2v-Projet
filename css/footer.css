@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*  */
+footer {
+    margin-top: auto;
+}
+
+.contenu-footer {
+    position: none;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 1.5rem 10%;
+    background-color: rgba(0, 119, 255, 0.651);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer-service h3,
+.footer-conctacte h3,
+.footer-heure h3 {
+    color: #333;
+}
+
+.liste-services {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liste-services a {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.liste-services a:hover {
+    color: #000;
+}
+
+.footer-heure p {
+    margin: 5px 0;
+}
