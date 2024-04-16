@@ -16,9 +16,15 @@ include 'data/db.php'
 <body>
     <div class="contenu">
         <h1 class="" align='center'>Bienvenue sur PSYLIB</h1>
-        <div class="flex" align='center'>
-            <a href="./indexconnect.php">Connectez-vous</a>
-        </div>
+        <?php if(!isset($_SESSION["Is_conected"])){
+            echo
+                    '<div class="flex" align="center">'
+                    .'<a href="./indexconnect.php">Connectez-vous</a>'
+                .'</div>';
+
+        }
+        ?>
+
         
     </div>
     <!-- <img src="image.png"/> -->
