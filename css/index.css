@@ -5,18 +5,20 @@
     background: url('../image.png');
     background-size: cover;
     background-position: center;
+
 }
 
 .flex {
     display: flex;
     justify-content: center;
-
 }
 
 .flex a {
     margin: 0 50px;
     margin-top: 50px;
     font-size: 100px;
+    text-decoration: none;
+    color: black;
 
 }
 

@@ -20,7 +20,8 @@
             
             <p>Téléphone: +33 1 23 45 67 89</p>
             <p>E-mail: contact@psylib.fr</p>
-            <p>123 Rue des Thérapeutes, 31000 Toulouse, France</p>
+            <p>123 Rue des Thérapeutes, </p>
+            <p>31000 Toulouse, France</p>
             </ul>
         </div>
 

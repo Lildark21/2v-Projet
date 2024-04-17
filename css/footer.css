@@ -13,10 +13,10 @@ footer {
     top: auto;
     left: auto;
     width: 100%;
-    padding: 1.5rem 10%;
+    
     background-color: rgba(0, 119, 255, 0.651);
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 100;
 }
@@ -45,5 +45,5 @@ footer {
 }
 
 .footer-heure p {
-    margin: 5px 0;
+    margin: 0 0;
 }
