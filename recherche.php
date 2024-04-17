@@ -21,7 +21,7 @@ else{
             echo  '<h2><a href="psy_visualisation.php?id='.$contenu['ID'].'">'.$contenu['Last_name']." " .$contenu['First_name'].'</a>  </h2>';
     }}
     else{
-        $stmt = db()->prepare("SELECT * FROM psy WHERE speciality LIKE ?");//spé
+        $stmt = db()->prepare("SELECT * FROM psy WHERE specialty LIKE ?");//spé
         $stmt->execute(["%" . $_GET["recherche"] . "%"]);
         $contenus = $stmt->fetchAll(PDO::FETCH_ASSOC);
             if(!empty($contenus)){
